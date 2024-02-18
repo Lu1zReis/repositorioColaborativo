@@ -1,2 +1,2 @@
-# maratona
-repositório colaborativo para colocar as quests feitas da equipe
+# trabalho
+repositório colaborativo para colocar coisas feitas em grupo
