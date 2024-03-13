@@ -52,6 +52,7 @@ int verifyStack(stack<string> &c, vector<vector<string>> paths, vector<string> v
             }
         } else return 0;
     }
+    return 0;
 }
 
 
@@ -71,20 +72,20 @@ int main()
 
     while (++n < tape.size() and verifyStack(control, paths, var, tape[n])) {
         string s = control.top();
-        cout << control.top() << " = ";
+        //cout << control.top() << " = ";
 
         s = s[1];
         control.pop();
         control.push(s);
 
-        cout << control.top() << endl;
-        cout << n << endl;
+        //cout << control.top() << endl;
+        //cout << n << endl;
     }
-    cout << "saiu" << endl;
-    cout << control.top() << endl;
+    //cout << "saiu" << endl;
+    //cout << control.top() << endl;
 
-    if (verifyStack(control, paths, var, ' ')) cout << "pilha: " << control.top() << endl;
-    else cout << "pilha (erro): " << control.top() << endl;
+    if (verifyStack(control, paths, var, ' ')) cout << "pertence a linguagem" << endl;
+    else cout << "erro " << control.top() << endl;
 
     return 0;
 }
