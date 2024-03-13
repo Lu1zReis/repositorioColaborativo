@@ -85,7 +85,7 @@ int main()
     //cout << control.top() << endl;
 
     if (verifyStack(control, paths, var, ' ')) cout << "pertence a linguagem" << endl;
-    else cout << "erro " << control.top() << endl;
+    else cout << "erro" << control.top() << endl;
 
     return 0;
 }
